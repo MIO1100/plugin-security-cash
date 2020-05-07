@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2, // версия манифеста,обязательная строка
+  "name": "Guard_cash_plagin",  //Имя продукта - нашего плагина
+  "version": "0.1",  //Версия продукта
+  "description": "ну шо народ погнали?",  //Описание нашей разработки
+  "content_scripts":[
+    {
+      "matches":["<all_urls>"],
+      "js" : ["code.js"],
+      "run_at":"document_end"
+    }
+  ]
+
+  
+}
